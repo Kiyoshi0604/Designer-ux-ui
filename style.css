@@ -269,6 +269,58 @@ textarea[readonly] {
     text-decoration: underline;
 }
 
+/* ===== Ancora & Back-to-top flottante ===== */
+.anchor-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-cinza);
+    opacity: 0.85;
+    transition: color .15s, transform .12s;
+    margin-left: 8px;
+    text-decoration: none;
+    font-size: .95rem;
+}
+.anchor-link svg { width: 16px; height: 16px; }
+.anchor-link:hover { color: var(--cor-primaria); transform: translateY(-2px); }
+.anchor-link.copied { color: #16a34a; }
+
+/* floating back-to-top */
+#backToTopFloat {
+    position: fixed;
+    right: 18px;
+    bottom: 22px;
+    z-index: 1100;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: all .25s ease;
+    pointer-events: none;
+}
+#backToTopFloat.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+#backToTopFloat .btn-backtop {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35rem;
+    background: var(--cor-primaria);
+    color: #fff;
+    padding: .45rem .6rem;
+    border-radius: 999px;
+    box-shadow: 0 8px 18px rgba(3,105,161,0.18);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* ajustes visuais para o ícone de âncora dentro de títulos */
+.section-title .anchor-link,
+.card-title .anchor-link { font-size: 0.9rem; }
+
+/* melhorar foco acessível */
+a:focus, button:focus { outline: 3px solid rgba(139,39,145,0.12); outline-offset: 2px; }
+
+/* pequenas melhorias nos botões de cópia caso existam */
+[data-copy] { cursor: pointer; }
+
 /* ================================
    RESPONSIVIDADE
 ================================ */
