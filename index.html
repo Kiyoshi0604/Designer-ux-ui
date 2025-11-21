@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="topo">
+<head>
+    <title>Home | Designer UI/UX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/display.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-display"></i> Designer UI/UX
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="formacao.html">Formação</a></li>
+                <li class="nav-item"><a class="nav-link" href="certificacao.html">Certificação</a></li>
+                <li class="nav-item"><a class="nav-link" href="atuacao.html">Atuação</a></li>
+                <li class="nav-item"><a class="nav-link" href="creditos.html">Créditos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-7">
+                    <span class="badge-pill mb-2">Interface + Experiência = UI/UX</span>
+                    <h1 class="display-4 fw-bold mb-3">Designer de UI/UX</h1>
+                    <p class="lead">
+                        Profissional que conecta negócios, tecnologia e pessoas para criar
+                        produtos digitais intuitivos, bonitos e fáceis de usar.
+                    </p>
+                    <p>
+                        Neste site você encontra um panorama sobre o que faz esse profissional,
+                        sua formação, certificações e principais áreas de atuação no mercado.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a href="sobre.html" class="btn btn-primary">
+                            Entender o papel do Designer <i class="bi bi-arrow-right-circle ms-1"></i>
+                        </a>
+                        <a href="contato.html" class="btn btn-outline-light">
+                            Simular um contato
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <i class="bi bi-phone hero-icon"></i>
+                    <p class="mt-3 text-light-50">
+                        Foco em interfaces claras, acessíveis e responsivas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUE UI/UX IMPORTA -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Por que UI/UX é importante?</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+                A experiência do usuário impacta diretamente satisfação, retenção e resultados de negócio.
+            </p>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                <div class="col">
+                    <div class="card fade-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-emoji-smile"></i> Facilidade de uso</h5>
+                            <p class="card-text">
+                                Interfaces bem planejadas reduzem esforço, dúvidas e erros do usuário.
+                                Quanto mais simples for a jornada, maior a chance de concluir tarefas
+                                como compras, cadastros e consultas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card fade-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-graph-up"></i> Resultado para o negócio</h5>
+                            <p class="card-text">
+                                Uma boa experiência melhora taxas de conversão, reduz chamadas no suporte
+                                e aumenta a percepção de valor da marca no ambiente digital.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card fade-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-shield-check"></i> Confiança e consistência</h5>
+                            <p class="card-text">
+                                Elementos visuais alinhados, texto claro e feedbacks na interface geram
+                                confiança. Isso faz o usuário se sentir seguro ao navegar e tomar decisões.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARROSSEL DE “PROJETOS” / EXEMPLOS -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Exemplos de aplicações de UI/UX</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+                Alguns tipos de projetos em que o Designer de UI/UX costuma atuar.
+            </p>
+
+            <div id="carouselProjetos" class="carousel slide carousel-portfolio" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="badge-pill mb-2">Aplicativos móveis</span>
+                                <h5 class="card-title mt-1">App de banco digital</h5>
+                                <p class="card-text">
+                                    Telas pensadas para uso rápido, com ícones claros, foco em segurança
+                                    e navegação intuitiva para pagamentos, extratos e transferências.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="badge-pill mb-2">Web</span>
+                                <h5 class="card-title mt-1">Plataforma de cursos online</h5>
+                                <p class="card-text">
+                                    Interface responsiva para que o aluno encontre aulas, trilhas de
+                                    aprendizado e avaliações de forma simples, em diferentes dispositivos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="badge-pill mb-2">Sistemas internos</span>
+                                <h5 class="card-title mt-1">Painel de gestão de dados</h5>
+                                <p class="card-text">
+                                    Dashboards e formulários pensados para produtividade, reduzindo
+                                    cliques desnecessários e priorizando informações mais usadas no dia a dia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-4">
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#topo"><i class="bi bi-chevron-up"></i> Voltar ao topo</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container text-center">
+        <small>SEU NOME SOBRENOME 2025 &copy; Todos os direitos reservados.</small>
+        <small>Trabalho acadêmico sem fins lucrativos.</small>
+        <small>Hospedado no GitHub e enviado via Tarefas do MS-Teams.</small>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
