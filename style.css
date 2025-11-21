@@ -338,3 +338,58 @@ a:focus, button:focus { outline: 3px solid rgba(139,39,145,0.12); outline-offset
         text-align: center;
     }
 }
+
+/* ================================
+   IMAGENS E CARDS COM IMAGEM
+================================ */
+.card-img-top {
+    object-fit: cover;
+    height: 250px;
+}
+
+.hover-card {
+    overflow: hidden;
+}
+
+.hover-card:hover img {
+    transform: scale(1.05);
+}
+
+.hover-card img {
+    transition: transform 0.3s ease;
+}
+
+/* ================================
+   PROCESSO DE DESIGN
+================================ */
+.process-step {
+    padding: 20px;
+    background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+    border-radius: 12px;
+    border: 2px solid #bfdbfe;
+    transition: all 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(3, 105, 161, 0.15);
+    border-color: #3b82f6;
+}
+
+/* ================================
+   SEÇÃO UI VS UX
+================================ */
+.border-start {
+    border-left-width: 5px !important;
+}
+
+/* ================================
+   EFEITO HOVER NOS CARDS
+================================ */
+.card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15) !important;
+}

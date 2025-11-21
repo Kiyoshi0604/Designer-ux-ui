@@ -40,39 +40,105 @@
     <div class="container">
         <h1 class="section-title">Sobre o tema: Designer de UI/UX</h1>
         <div class="section-divider"></div>
-        <p>
-            UI (User Interface) é a parte visível de um produto digital: telas, botões,
-            tipografia, cores, ícones e todos os elementos com que o usuário interage.
-            UX (User Experience) é a experiência completa da pessoa ao usar esse produto,
-            incluindo emoções, facilidades, dificuldades e resultados obtidos.
-        </p>
-        <p>
-            O Designer de UI/UX é o profissional que equilibra esses dois lados:
-            garante que as interfaces sejam visualmente agradáveis e, ao mesmo tempo,
-            que o caminho percorrido pelo usuário seja lógico, claro e eficiente.
-        </p>
+        
+        <!-- Introdução com imagem -->
+        <div class="row g-4 align-items-center mb-5">
+            <div class="col-md-6">
+                <p>
+                    <strong>UI (User Interface)</strong> é a parte visível de um produto digital: telas, botões,
+                    tipografia, cores, ícones e todos os elementos com que o usuário interage.
+                </p>
+                <p>
+                    <strong>UX (User Experience)</strong> é a experiência completa da pessoa ao usar esse produto,
+                    incluindo emoções, facilidades, dificuldades e resultados obtidos.
+                </p>
+                <p>
+                    O <strong>Designer de UI/UX</strong> é o profissional que equilibra esses dois lados:
+                    garante que as interfaces sejam visualmente agradáveis e, ao mesmo tempo,
+                    que o caminho percorrido pelo usuário seja lógico, claro e eficiente.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="card border-0 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=400&fit=crop" 
+                         alt="Design UI/UX em prática" class="card-img-top rounded-3" loading="lazy">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-muted small">Design moderno focado na experiência do usuário</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <!-- Diferença UI vs UX -->
+        <section class="mb-5 p-4 bg-light rounded-3 border-start border-5 border-primary">
+            <h2 class="h4 mb-4"><i class="bi bi-diagram-3 text-primary me-2"></i>UI vs UX: Entenda a diferença</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary"><i class="bi bi-palette-fill me-2"></i>UI - User Interface</h5>
+                            <p class="card-text">É o que você vê e toca:</p>
+                            <ul class="small">
+                                <li>Cores e tipografia</li>
+                                <li>Botões e ícones</li>
+                                <li>Layout e espaçamento</li>
+                                <li>Animações e transições</li>
+                                <li>Elementos visuais gerais</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-success"><i class="bi bi-person-circle me-2"></i>UX - User Experience</h5>
+                            <p class="card-text">É como você se sente:</p>
+                            <ul class="small">
+                                <li>Facilidade de uso</li>
+                                <li>Velocidade de navegação</li>
+                                <li>Solução de problemas</li>
+                                <li>Satisfação do usuário</li>
+                                <li>Jornada completa</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Três pilares principais -->
+        <h2 class="h4 section-title mb-4">Os três pilares do Designer UI/UX</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-2 mb-5">
             <div class="col">
-                <div class="card fade-card h-100">
+                <div class="card fade-card h-100 border-0 shadow-sm hover-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop" 
+                         alt="Pesquisa de usuário" class="card-img-top" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-bounding-box"></i> Olhar para o usuário</h5>
+                        <h5 class="card-title"><i class="bi bi-bounding-box text-primary"></i> Olhar para o usuário</h5>
                         <p class="card-text">
                             Antes de desenhar telas, o Designer de UX pesquisa quem são os
                             usuários, quais são seus objetivos, limitações e expectativas.
                         </p>
                         <p class="card-text">
                             Esse entendimento orienta decisões de navegação, conteúdo e
-                            priorização de funcionalidades.
+                            priorização de funcionalidades através de métodos como:
                         </p>
+                        <ul class="small mb-0">
+                            <li>Entrevistas com usuários</li>
+                            <li>Análise de comportamento</li>
+                            <li>Personas e jornadas</li>
+                            <li>Testes de usabilidade</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card fade-card h-100">
+                <div class="card fade-card h-100 border-0 shadow-sm hover-card">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop" 
+                         alt="Organização visual" class="card-img-top" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-layout-text-window"></i> Organização visual</h5>
+                        <h5 class="card-title"><i class="bi bi-layout-text-window text-success"></i> Organização visual</h5>
                         <p class="card-text">
                             A camada de UI se preocupa com hierarquia de informações,
                             alinhamentos, contrastes, tamanho de fontes e espaçamentos
@@ -80,28 +146,170 @@
                         </p>
                         <p class="card-text">
                             A interface precisa comunicar rapidamente o que é mais
-                            importante em cada tela.
+                            importante em cada tela através de:
                         </p>
+                        <ul class="small mb-0">
+                            <li>Hierarquia visual clara</li>
+                            <li>Contraste e acessibilidade</li>
+                            <li>Design responsivo</li>
+                            <li>Consistência visual</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card fade-card h-100">
+                <div class="card fade-card h-100 border-0 shadow-sm hover-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop" 
+                         alt="Processo iterativo" class="card-img-top" loading="lazy">
                     <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-repeat"></i> Processo iterativo</h5>
+                        <h5 class="card-title"><i class="bi bi-repeat text-info"></i> Processo iterativo</h5>
                         <p class="card-text">
                             O trabalho de UI/UX é cíclico: prototipar, testar com pessoas,
                             coletar feedback e ajustar o que for necessário.
                         </p>
                         <p class="card-text">
                             Essa melhoria contínua ajuda o produto a evoluir junto com
-                            seus usuários e com o negócio.
+                            seus usuários através de:
                         </p>
+                        <ul class="small mb-0">
+                            <li>Design Sprint</li>
+                            <li>Prototipagem rápida</li>
+                            <li>Feedback loops</li>
+                            <li>Melhorias contínuas</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Processo de Design -->
+        <section class="mb-5">
+            <h2 class="h4 section-title mb-4">O processo de Design UI/UX</h2>
+            <div class="card border-0 shadow-sm p-4">
+                <div class="row text-center align-items-center">
+                    <div class="col-md-2 mb-3">
+                        <div class="process-step">
+                            <i class="bi bi-search text-primary" style="font-size: 2rem;"></i>
+                            <p class="mt-2 small fw-bold">Research</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-center text-muted">→</div>
+                    <div class="col-md-2 mb-3">
+                        <div class="process-step">
+                            <i class="bi bi-lightbulb text-warning" style="font-size: 2rem;"></i>
+                            <p class="mt-2 small fw-bold">Ideação</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-center text-muted">→</div>
+                    <div class="col-md-2 mb-3">
+                        <div class="process-step">
+                            <i class="bi bi-pencil-square text-success" style="font-size: 2rem;"></i>
+                            <p class="mt-2 small fw-bold">Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-center text-muted">→</div>
+                    <div class="col-md-2 mb-3">
+                        <div class="process-step">
+                            <i class="bi bi-play-circle text-info" style="font-size: 2rem;"></i>
+                            <p class="mt-2 small fw-bold">Prototipo</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-center text-muted">↻</div>
+                </div>
+                <p class="text-center text-muted mt-3 small">Teste e iteração contínua</p>
+            </div>
+        </section>
+
+        <!-- Habilidades necessárias -->
+        <section class="mb-5">
+            <h2 class="h4 section-title mb-4">Habilidades essenciais</h2>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <h6 class="text-primary fw-bold mb-3"><i class="bi bi-hammer me-2"></i>Hard Skills</h6>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item border-0 py-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>Figma e ferramentas de design
+                        </div>
+                        <div class="list-group-item border-0 py-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>Prototipagem interativa
+                        </div>
+                        <div class="list-group-item border-0 py-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>HTML/CSS básico
+                        </div>
+                        <div class="list-group-item border-0 py-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>Princípios de design visual
+                        </div>
+                        <div class="list-group-item border-0 py-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>Acessibilidade (WCAG)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-primary fw-bold mb-3"><i class="bi bi-person-check me-2"></i>Soft Skills</h6>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item border-0 py-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>Comunicação clara
+                        </div>
+                        <div class="list-group-item border-0 py-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>Empatia com usuários
+                        </div>
+                        <div class="list-group-item border-0 py-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>Pensamento crítico
+                        </div>
+                        <div class="list-group-item border-0 py-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>Trabalho em equipe
+                        </div>
+                        <div class="list-group-item border-0 py-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>Resolução de problemas
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ferramentas principais -->
+        <section class="mb-5">
+            <h2 class="h4 section-title mb-4">Ferramentas principais do mercado</h2>
+            <div class="row g-3">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body py-4">
+                            <i class="bi bi-palette text-primary" style="font-size: 2.5rem;"></i>
+                            <h6 class="mt-3 fw-bold">Figma</h6>
+                            <p class="small text-muted">Prototipagem e design colaborativo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body py-4">
+                            <i class="bi bi-square-half text-success" style="font-size: 2.5rem;"></i>
+                            <h6 class="mt-3 fw-bold">Adobe XD</h6>
+                            <p class="small text-muted">Design e prototipagem UX/UI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body py-4">
+                            <i class="bi bi-bezier text-info" style="font-size: 2.5rem;"></i>
+                            <h6 class="mt-3 fw-bold">Sketch</h6>
+                            <p class="small text-muted">Design digital e interface</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card text-center border-0 shadow-sm h-100">
+                        <div class="card-body py-4">
+                            <i class="bi bi-play-btn text-warning" style="font-size: 2.5rem;"></i>
+                            <h6 class="mt-3 fw-bold">Axure RP</h6>
+                            <p class="small text-muted">Prototipagem avançada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="back-to-top">
             <a href="#topo"><i class="bi bi-chevron-up"></i> Voltar ao topo</a>
@@ -111,9 +319,8 @@
 
 <footer class="site-footer">
     <div class="container text-center">
-        <small>SEU NOME SOBRENOME 2025 &copy; Todos os direitos reservados.</small>
+        <small>Enzo Basso 2025 &copy; Todos os direitos reservados.</small>
         <small>Trabalho acadêmico sem fins lucrativos.</small>
-        <small>Hospedado no GitHub e enviado via Tarefas do MS-Teams.</small>
     </div>
 </footer>
 
