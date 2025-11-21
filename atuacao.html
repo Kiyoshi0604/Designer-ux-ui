@@ -1,115 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR" id="topo">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atuação | Designer UI/UX</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Atuação | Designer UI/UX</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="icon" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/display.svg">
-    <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <i class="bi bi-display"></i> Designer UI/UX
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link" href="formacao.html">Formação</a></li>
-                <li class="nav-item"><a class="nav-link" href="certificacao.html">Certificação</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="atuacao.html">Atuação</a></li>
-                <li class="nav-item"><a class="nav-link" href="creditos.html">Créditos</a></li>
-                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-            </ul>
-        </div>
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-display"></i> Designer UI/UX</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html" data-page="index">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html" data-page="sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="formacao.html" data-page="formacao">Formação</a></li>
+        <li class="nav-item"><a class="nav-link" href="certificacao.html" data-page="certificacao">Certificação</a></li>
+        <li class="nav-item"><a class="nav-link" href="atuacao.html" data-page="atuacao">Atuação</a></li>
+        <li class="nav-item"><a class="nav-link" href="creditos.html" data-page="creditos">Créditos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html" data-page="contato">Contato</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
 <main class="py-5">
-    <div class="container">
-        <h1 class="section-title">Áreas de atuação do Designer UI/UX</h1>
-        <div class="section-divider"></div>
-        <p>
-            Sempre que existe um produto ou serviço digital que precisa ser usado por pessoas,
-            há espaço para o trabalho de UI/UX. Essa atuação pode acontecer em empresas de
-            tecnologia, agências, consultorias ou de forma autônoma.
-        </p>
+  <div class="container">
+    <header class="mb-4">
+      <h1 class="section-title">Onde um Designer UI/UX atua</h1>
+      <p class="text-muted">Do produto digital ao consultivo — papéis, entregáveis e exemplos práticos.</p>
+    </header>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-            <div class="col">
-                <div class="card fade-card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-building"></i> Empresas e startups</h5>
-                        <p class="card-text">
-                            Em times de produto digital, o Designer de UI/UX participa de
-                            reuniões de planejamento, entende demandas de negócio e transforma
-                            requisitos em fluxos de navegação e protótipos.
-                        </p>
-                        <p class="card-text">
-                            Exemplos: bancos digitais, plataformas de streaming, e-commerce e
-                            aplicativos de serviços.
-                        </p>
-                    </div>
-                </div>
+    <section id="areas" class="mb-5">
+      <h2 class="h5 section-title">Principais áreas</h2>
+      <div class="row g-4 mt-3">
+        <div class="col-md-6">
+          <div class="card h-100 custom">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-building"></i> Times de Produto</h5>
+              <p>Colaboração com PMs, engenheiros e analistas para priorizar funcionalidades e entregar valor ao usuário.</p>
+              <p class="small text-muted">Entregáveis: jornadas, wireframes, protótipos testáveis, design tokens.</p>
             </div>
-
-            <div class="col">
-                <div class="card fade-card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-briefcase"></i> Agências e consultorias</h5>
-                        <p class="card-text">
-                            Nesse cenário, o profissional atende vários clientes, desenvolvendo
-                            sites institucionais, landing pages de campanhas, portais e experiências
-                            específicas para cada projeto.
-                        </p>
-                        <p class="card-text">
-                            O trabalho costuma ser feito em colaboração com redatores, diretores de
-                            arte e desenvolvedores front-end.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card fade-card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-people"></i> Profissional autônomo</h5>
-                        <p class="card-text">
-                            Alguns Designers de UI/UX trabalham como freelancers, atendendo
-                            empresas de diferentes portes e ajudando a melhorar aplicativos,
-                            sites e sistemas já existentes.
-                        </p>
-                        <p class="card-text">
-                            Nessa modalidade, portfólio e capacidade de comunicação com clientes
-                            são diferenciais importantes.
-                        </p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
 
-        <div class="back-to-top">
-            <a href="#topo"><i class="bi bi-chevron-up"></i> Voltar ao topo</a>
+        <div class="col-md-6">
+          <div class="card h-100 custom">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-briefcase"></i> Agências & Consultorias</h5>
+              <p>Projetos variados para clientes, com foco em resultado de negócio e velocidade de entrega.</p>
+              <p class="small text-muted">Entregáveis: concept, provas de hipótese, entregas para marketing e produto.</p>
+            </div>
+          </div>
         </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 custom">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-people"></i> Freelance / Autônomo</h5>
+              <p>Atendimento direto ao cliente, gestão de expectativas e entrega de portfólio como prova social.</p>
+              <p class="small text-muted">Entregáveis: projetos end-to-end, consultorias curtas, melhorias rápidas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 custom">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-university"></i> Educação & Pesquisa</h5>
+              <p>Docência, pesquisa de usabilidade e liderança de estudos para elevar maturidade de produto.</p>
+              <p class="small text-muted">Entregáveis: relatórios de pesquisa, papers, workshops.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="mb-5">
+      <h2 class="h5 section-title">Habilidades e entregáveis</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Pesquisa com usuários</li>
+            <li class="list-group-item">Personas e jornadas</li>
+            <li class="list-group-item">Wireframes e protótipos</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Design system</li>
+            <li class="list-group-item">Acessibilidade</li>
+            <li class="list-group-item">Handoff para devs</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Medição e A/B testing</li>
+            <li class="list-group-item">Comunicação com stakeholders</li>
+            <li class="list-group-item">Mentoria e liderança</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="case" class="mb-5">
+      <h2 class="h5 section-title">Case curto (exemplo prático)</h2>
+      <div class="card p-3">
+        <div class="row g-3 align-items-center">
+          <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=600&fit=crop" alt="mockup" class="img-fluid rounded">
+          </div>
+          <div class="col-md-8">
+            <h6 class="fw-bold">Problema</h6>
+            <p class="small text-muted">Alta taxa de abandono no fluxo de cadastro.</p>
+            <h6 class="fw-bold">Solução</h6>
+            <p class="small text-muted">Redesenho do formulário em etapas, validação inline e microcopy clara.</p>
+            <h6 class="fw-bold">Resultado</h6>
+            <p class="small text-success">Redução do abandono em 28% (hipótese/medida).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="d-flex gap-2 mb-5">
+      <a href="contato.html?topic=atuacao" class="btn btn-primary">Quero consultoria</a>
+      <a href="formacao.html" class="btn btn-outline-secondary">Ver formação recomendada</a>
     </div>
+
+    <div class="back-to-top">
+      <a href="#topo" class="btn-backtop" title="Ir para o topo" aria-label="Ir para o topo">
+        <i class="bi bi-chevron-up" aria-hidden="true"></i>
+        <span class="visually-hidden">Voltar ao topo</span>
+      </a>
+    </div>
+  </div>
 </main>
 
 <footer class="site-footer">
-    <div class="container text-center">
-        <small>Enzo Basso 2025 &copy; Todos os direitos reservados.</small>
-        <small>Trabalho acadêmico sem fins lucrativos.</small>
-    </div>
+  <div class="container text-center">
+    <small>Enzo Basso 2025 &copy; Todos os direitos reservados.</small><br>
+    <small>Trabalho acadêmico sem fins lucrativos. Hospedado no GitHub.</small>
+  </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -112,30 +112,76 @@
     });
   }
 
-  // highlight nav item based on current file name
-  function highlightNav() {
-    const path = location.pathname.split('/').pop() || 'index.html';
+  // marca visualmente link ativo (limpa os anteriores)
+  function setActiveNavLink(link) {
+    document.querySelectorAll('.navbar-nav .nav-item').forEach(li => li.classList.remove('active'));
     document.querySelectorAll('.navbar-nav .nav-link').forEach(a => {
-      const href = a.getAttribute('href') || '';
-      // comparar base name
-      const base = href.split('/').pop();
-      if (base === path) {
-        a.classList.add('active');
-      } else {
-        a.classList.remove('active');
-      }
+      a.classList.remove('active');
+      a.removeAttribute('aria-current');
     });
+    if (!link) return;
+    link.classList.add('active');
+    link.setAttribute('aria-current', 'page');
+    const parent = link.closest('.nav-item');
+    if (parent) parent.classList.add('active');
   }
 
-  // collapse mobile navbar after clicking nav link
-  function setupCollapseOnNavClick() {
-    document.querySelectorAll('.navbar-collapse .nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        const collapse = document.querySelector('.navbar-collapse.show');
-        if (collapse) new bootstrap.Collapse(collapse).hide();
-      });
-    });
+  // detecta o link que corresponde à URL atual (path / hash / query) e ativa ele
+  function highlightNav() {
+    const current = new URL(location.href, location.origin);
+    const links = Array.from(document.querySelectorAll('.navbar-nav .nav-link'));
+
+    // primeiro tenta match por path exato (sem barra final)
+    const currentPath = (current.pathname || '/').replace(/\/+$/, '') || '/';
+    let matched = null;
+
+    for (const a of links) {
+      const href = a.getAttribute('href') || '';
+      let target;
+      try { target = new URL(href, location.origin); } catch { target = null; }
+
+      if (target) {
+        const targetPath = (target.pathname || '/').replace(/\/+$/, '') || '/';
+        // match por path (index handling)
+        if (targetPath === currentPath) { matched = a; break; }
+        // match por hash na mesma página
+        if (targetPath === currentPath && target.hash && target.hash === current.hash) { matched = a; break; }
+        // match por query completa
+        if (targetPath === currentPath && target.search && target.search === current.search) { matched = a; break; }
+      } else {
+        // href apenas hash (ex: #sec) ou relativo não resolvível — comparar hash
+        if (href.startsWith('#') && href === current.hash) { matched = a; break; }
+        // fallback: usar data-page se definido
+        const dp = a.dataset.page;
+        if (dp && (currentPath.includes(dp) || current.hash.includes(dp) || current.search.includes(dp))) { matched = a; break; }
+      }
+    }
+
+    // se não encontrou por path/hash, tenta comparar base name (sobre.html vs sobre)
+    if (!matched) {
+      const base = currentPath.split('/').pop() || 'index';
+      for (const a of links) {
+        const href = (a.getAttribute('href') || '').split('?')[0].split('#')[0].split('/').pop();
+        if (href === base || (href === '' && base === 'index')) { matched = a; break; }
+      }
+    }
+
+    setActiveNavLink(matched);
   }
+
+  // listeners
+  document.addEventListener('DOMContentLoaded', highlightNav);
+  window.addEventListener('popstate', highlightNav);
+  window.addEventListener('hashchange', highlightNav);
+
+  // marca imediatamente ao clicar para feedback visual instantâneo
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      setActiveNavLink(link);
+      // garantir correção após possível navegação
+      setTimeout(highlightNav, 250);
+    });
+  });
 
   // keyboard shortcuts
   function setupKeyboardShortcuts() {

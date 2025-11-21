@@ -57,6 +57,17 @@ body {
     color: var(--cor-primaria) !important;
 }
 
+/* Destaque azul para o item do menu ativo */
+.navbar .nav-link.active,
+.navbar .nav-item.active > .nav-link {
+  color: #0d6efd !important;              /* azul */
+  background-color: rgba(13,110,253,0.06) !important;
+  border-radius: 8px;
+  padding: 0.32rem 0.6rem;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(13,110,253,0.06);
+}
+
 /* ================================
    HERO SECTION (HOME)
 ================================ */
